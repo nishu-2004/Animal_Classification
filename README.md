@@ -13,7 +13,8 @@ This project consists of two main parts:
 
 2. **Model Training Analysis**  
    - Evaluates **Accuracy vs. Epoch** to monitor model performance.  
-   - Analyzes **Confusion Matrix** to identify misclassified categories.  
+   - Analyzes **model predictions** using performance metrics.  
+   - All generated plots are saved in the `plots/` folder.  
 
 ---
 
@@ -62,23 +63,15 @@ output_folder/
 ### **1. Accuracy vs. Epoch Plot**  
 This graph tracks model performance over time.  
 
-- **Train Accuracy (Blue Line)**: Increases steadily, reaching about **90%**.  
-- **Validation Accuracy (Orange Line)**: Stabilizes at **81.9%** after fluctuations.  
+- **Train Accuracy**: Increases steadily, reaching about **90%**.  
+- **Validation Accuracy**: Stabilizes at **81.9%** after fluctuations.  
 - **Key Takeaway**:  
    **No major overfitting**, since train-validation accuracy gap is small.  
    **Improvements**: Try **data augmentation, dropout tuning, or more layers**.  
 
-### **2. Confusion Matrix**  
-This heatmap highlights **misclassified classes**.  
-
-- **Diagonal Values**: Correctly classified samples.  
-- **Off-Diagonal Values**: Misclassified samples (e.g., **dogs misclassified as cats**).  
-- **Observations**:  
-  - Some animals (like **zebras and cows**) are well-classified due to distinct patterns.  
-  - **Potential Fixes**:  
-    🔹 Use **class-weighted training**.  
-    🔹 Apply **harder augmentations** (contrast changes, rotations).  
-    🔹 Add **more data** for frequently misclassified categories.  
+### **2. Performance Metrics & Confusion Matrix**  
+- **Model evaluation results, including accuracy trends and misclassifications, are visualized using plots.**  
+- **All plots are saved in the `plots/` folder.**  
 
 ---
 
@@ -89,13 +82,9 @@ This heatmap highlights **misclassified classes**.
   2. **Pre-trained models** (MobileNet, ResNet).  
   3. **Learning Rate Schedulers** to improve convergence.  
 
- **Next Steps**: Experiment with hyperparameters and augmentation techniques!  
+🚀 **Next Steps**: Experiment with hyperparameters and augmentation techniques!  
 
 ---
 
 ## **License**  
 MIT License. Free to use and modify.  
-
----
-
-This README covers both **data processing & model evaluation** in a structured way. Let me know if you need edits! 🔥
