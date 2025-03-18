@@ -80,8 +80,6 @@ This heatmap highlights **misclassified classes**.
     🔹 Apply **harder augmentations** (contrast changes, rotations).  
     🔹 Add **more data** for frequently misclassified categories.  
 
-![Confusion Matrix](confusion_matrix.png)  
-
 ---
 
 ## **Conclusion**  
