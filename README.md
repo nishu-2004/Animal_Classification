@@ -85,6 +85,3 @@ This graph tracks model performance over time.
 🚀 **Next Steps**: Experiment with hyperparameters and augmentation techniques!  
 
 ---
-
-## **License**  
-MIT License. Free to use and modify.  
